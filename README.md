@@ -1,2 +1,7 @@
 # LinkedIn-and-Google
-Scrap Linkedin profiles directly with google
+
+Scrip will do :
+* Login via LinkedIn
+* Login via Google
+* Search sections from Excel File
+* Open Linkedin profiles and adding to another Excel Column
