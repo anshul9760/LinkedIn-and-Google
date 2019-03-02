@@ -29,12 +29,12 @@ passw=driver.find_element_by_class_name("whsOnd")
 passw.send_keys("qwertyipl1234")
 passw.send_keys(Keys.RETURN)
 time.sleep(1)
-ExcelFile = r"C:\Users\asus\Desktop\CSIR_CDRI\Final-DSP.xlsx" #Mention Excel according to preference
+ExcelFile = r"excelfile.xlsx" #Mention Excel according to preference
 # You have to check columns index before applying
 df=pd.read_excel(ExcelFile, sheet_name=0, index_col=0)
 len=df.size
 for i in range (0,len):
-    name=df["Reporter Name"][i]
+    name=df["Name"][i]
     driver.get("https://www.google.com/")
     google_search =name+" "+"linkedin"
     search_query = driver.find_element_by_name('q')
